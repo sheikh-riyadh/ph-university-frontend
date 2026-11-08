@@ -1,22 +1,13 @@
 import { Layout, Menu, theme } from "antd";
-import {
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from "@ant-design/icons";
-import React from "react";
+
 import { Outlet } from "react-router-dom";
+import { adminSidebar } from "../../routes/admin.routes";
 
 const { Header, Content, Footer, Sider } = Layout;
-const items = [
-  UserOutlined,
-  VideoCameraOutlined,
-  UploadOutlined,
-  UserOutlined,
-].map((icon, index) => ({
-  key: String(index + 1),
-  icon: React.createElement(icon),
-  label: `nav ${index + 1}`,
+const items = adminSidebar.map((item) => ({
+  key: item.key,
+  label: item.label,
+  children: item.children,
 }));
 
 const MainLayout = () => {
