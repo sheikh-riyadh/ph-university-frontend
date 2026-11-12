@@ -1,16 +1,4 @@
-import type { ReactNode } from "react";
-
-interface IRoute {
-  path: string;
-  element: ReactNode;
-}
-
-interface IItems {
-  name: string;
-  path?: string;
-  element?: ReactNode;
-  children?: IItems[];
-}
+import type { IItems, IRoute } from "../types";
 
 export const routesGenerator = (items: IItems[]) => {
   const routes = items.reduce((acc: IRoute[], item) => {
