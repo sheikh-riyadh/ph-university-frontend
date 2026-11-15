@@ -12,11 +12,13 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.14.0",
     "antd": "^6.7.0",
+    "jwt-decode": "^4.0.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-hook-form": "^7.91.0",
     "react-redux": "^9.3.1",
-    "react-router-dom": "^7.18.5"
+    "react-router-dom": "^7.18.5",
+    "redux-persist": "^6.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
